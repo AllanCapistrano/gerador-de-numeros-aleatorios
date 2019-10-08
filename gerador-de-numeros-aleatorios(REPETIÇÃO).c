@@ -7,7 +7,7 @@
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
-	int ext1, qtd, aux, status, i, j, k, l, m;
+	int qtd, aux, status, i, j, k, l, m;
 	
 	printf("Digite a quantidade de números aleatórios você deseja: ");
 	scanf("%d", &qtd);
