@@ -3,14 +3,13 @@
 #include<time.h>
 #include <locale.h>
 
-#define LIMIT 100 //Número máximo
+#define LIMIT 100 //NÃºmero mÃ¡ximo
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	int ext1, qtd, aux, status, i, j, k, l, m;
 	
-	
-	printf("Digite a quantidade de números aleatórios você deseja: ");
+	printf("Digite a quantidade de nÃºmeros aleatÃ³rios vocÃª deseja: ");
 	scanf("%d", &qtd);
 	printf("\n");
 	
@@ -18,10 +17,10 @@ int main(){
 	
 	srand(time(NULL));
 	
-	for(i=0; i<qtd; i++){
-			V[i] = 1 + (rand() % LIMIT);
-	}
+	for(i=0; i<qtd; i++)
+		V[i] = 1 + (rand() % LIMIT);
 	
+	/*LaÃ§o para ordenaÃ§Ã£o dos nÃºmeros*/
 	for(j=1; j<qtd; j++){
 		aux = V[j];
 		for(k=j; (k>0) && (aux < V[k-1]); k--){
@@ -30,9 +29,8 @@ int main(){
 		V[k] = aux;
 	}
 	
-	for(l=0; l<qtd; l++){
+	for(l=0; l<qtd; l++)
 		printf("%d ", V[l]);
-	}
 	
 	printf("\n\n");
 	system("pause");
