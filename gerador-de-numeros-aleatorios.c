@@ -5,17 +5,20 @@
 
 #define VALID 1
 #define INVALID 0
-#define LIMIT 100 //Número máximo
 
 int main(){
+    int limit;
 	setlocale(LC_ALL, "Portuguese");
+	printf("Digite o número limite que pode ser gerado: ");
+	scanf("%d", &limit);
+	
 	int qtd, aux, status, i, j, k, l, m;
 	
 	printf("Digite a quantidade de números aleatórios você deseja: ");
 	scanf("%d", &qtd);
 	printf("\n");
 	
-	if(qtd > LIMIT)
+	if(qtd > limit)
 		printf("Não é possível gerar essa quantidade de números, pois excede o valor máximo possível. Altere o número máximo modificando a constante \"LIMIT\" ou digite outra quanitdade de números aleatórios e tente novamente!\n\n");
 	else{
 		int V[qtd + 1];
@@ -24,7 +27,7 @@ int main(){
 		
 		for(i=0; i<qtd; i++){
 			do{
-				V[i] = 1 + (rand() % LIMIT);
+				V[i] = 1 + (rand() % limit);
 				status = VALID;
 				for(m=0; m<i; m++){
 					if(V[i] == V[m])
