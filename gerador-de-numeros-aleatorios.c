@@ -7,7 +7,7 @@
 #define INVALID 0
 
 int main(){
-    int limit;
+    	int limit;
 	setlocale(LC_ALL, "Portuguese");
 	printf("Digite o número limite que pode ser gerado: ");
 	scanf("%d", &limit);
