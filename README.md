@@ -1,9 +1,8 @@
 # Gerador-de-numeros-aleatorios
-* Dois geradores de números aleatórios feitos na linguagem de programação C, um que permite a repetição dos números e outro que não permite a repetição dos números. 
 
-* É possível alterar o valor máximo que o gerador irar gerar alterando a constante ```LIMIT```.
+* Dois geradores de números aleatórios feitos na linguagem de programação C, um que permite a [repetição dos números](https://github.com/AllanCapistrano/Gerador-de-numeros-aleatorios/blob/master/gerador-de-numeros-aleatorios(REPETIÇÃO).c) e outro que [não permite a repetição dos números](https://github.com/AllanCapistrano/Gerador-de-numeros-aleatorios/blob/master/gerador-de-numeros-aleatorios.c). 
 
-* Os números são mostrados em ordem crescente, caso não queira dessa forma, basta apagar ou comentar o laço que possui um comentário indicando ser o laço de ordenação (código abaixo). 
+* Os números são mostrados em ordem crescente, caso não deseje dessa forma, basta apagar ou comentar o laço abaixo. 
 ```C
         /*Laço para ordenação dos números*/
 	for(j=1; j<qtd; j++){
